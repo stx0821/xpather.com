@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://www.xpather.com/ -->
+<html class="no-js">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>XPath online real-time tester, evaluator and generator for XML &amp; HTML</title>
+	<meta name="description"
+		content="This most user-friendly online tool enables you to interactively and secretly query XML/HTML documents using XPath 2.0. It can generate queries for you too!">
+	<meta name="viewport" content="width=device-width">
+	<!-- <script async="" src="./xpather_files/analytics.js"></script> -->
+	<script src="/js/jquery.min.js"></script>
+	<script>
+		/* var $buoop = {
+			vs: { i: 13, f: -4, o: -4, s: 9, c: -4 }, api: 4,
+			text: "This page may not work correctly in your browser. Please use the latest version of Chrome or Firefox."
+		};
+		function $buo_f() {
+			var e = document.createElement("script");
+			e.src = "//browser-update.org/update.min.js";
+			document.body.appendChild(e);
+		}
+		try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
+		catch (e) { window.attachEvent("onload", $buo_f) } */
+	</script>
+	<script>
+		window.config = {
+			restUrl: "http://localhost:8080/record/nzJ7RFTp",
+			rootUrl: "/",
+			version: "0.0.1-alpha_8",
+			state: {
+				isXmlMode: true
+			}
+		}
+
+		$('<link/>', {
+			rel: 'stylesheet',
+			href: '/css/custom.css?v=' + window.config.version
+		}).appendTo('head');
+	</script>
+	<link rel="stylesheet" href="./xpather_files/custom.css">
+	<link rel="stylesheet" href="/js/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="/js/codemirror.css">
+	<script src="./xpather_files/codemirror.js"></script>
+	<script src="./xpather_files/formatting.js"></script>
+	<script src="./xpather_files/xml.js"></script>
+	<script src="./xpather_files/htmlmixed.js"></script>
+	<script src="./xpather_files/split.min.js"></script>
+	<script>
+		$.getScript("js/injectIframe.js?v=" + window.config.version)
+	</script>
+	<script>
+			/* (function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-90128437-1', 'auto');
+		ga('send', 'pageview'); */
+	</script>
+	<link rel="stylesheet" href="./xpather_files/custom.css">
+</head>
+
+<body>
+	<div id="top-pane" class="split content"></div>
+	<div id="bottom-pane" class="split">
+		<div id="left-pane" class="split split-horizontal content">
+			<div class="pane-header font-consistent">
+				<div class="btn-group pull-right">
+					<button id="format-btn" type="button" class="btn btn-success" title="It'll beautify your code!">Format</button>
+					<button id="save-btn" type="button" class="btn btn-success" title="It'll save your code!">Save</button>
+					<!--<button id="random-xml-btn" type="button" class="btn btn-success" title="It'll generate random xml">Random</button>-->
+				</div>
+				<div class="pull-right extra-info">
+					<span id="input_parse_mode" class="text-info">HTML mode</span>
+				</div>
+			</div>
+		</div>
+		<div id="right-pane" class="split split-horizontal content">
+			<div class="pane-header font-consistent">
+				<div class="btn-group pull-right" data-toggle="buttons" id="outputFormat">
+					<label class="btn btn-primary active">
+						<input type="radio" name="displayOptions" id="display-text" autocomplete="off" value="display-text" checked>Text
+					</label>
+					<label class="btn btn-primary">
+						<input type="radio" name="displayOptions" id="display-node" value="display-node" autocomplete="off">Node
+					</label>
+				</div>
+				<div class="pull-right btn-group">
+					<button type="button" class="btn btn-primary" id="input_copy_btn">Copy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
