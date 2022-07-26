@@ -6,4 +6,4 @@
 
 ## 截图
 
-![image](https://raw.githubusercontent.com/stx0821/xpather.com/master/img.png)
+![image](https://raw.githubusercontent.com/stx0821/xpather.com/master/img.jpg)
